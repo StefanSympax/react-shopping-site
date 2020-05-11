@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./components/nav/Nav";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+	state = {
+		activeTab: 0,
+	};
+
+	handleTabChange = (index) => {
+		this.setState({ activeTab: index });
+	};
+
+	renderContent() {
+		switch (this.state.activeTab) {
+			default:
+			case 0:
+				return <span>Items</span>;
+			case 1:
+				return <span>Cart</span>;
+		}
+	}
+
+	render() {
+		let { activeTab } = this.state;
+
+		return (
+			<div className="App">
+				<Nav activeTab={activeTab} onTabChange={this.handleTabChange} />
+				<div className="App-content">{this.renderContent()}</div>
+			</div>
+		);
+	}
 }
 
 export default App;
