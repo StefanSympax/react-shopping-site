@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import Nav from "./components/nav/Nav";
+import ItemPage from "./components/itempage/ItemPage";
+import { items } from "./static";
 import "./App.css";
 
-class App extends React.Component {
+class App extends Component {
 	state = {
 		activeTab: 0,
 	};
@@ -15,7 +17,7 @@ class App extends React.Component {
 		switch (this.state.activeTab) {
 			default:
 			case 0:
-				return <span>Items</span>;
+				return <ItemPage items={items} />;
 			case 1:
 				return <span>Cart</span>;
 		}
