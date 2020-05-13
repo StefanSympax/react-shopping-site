@@ -4,6 +4,11 @@
 }
 
 .App-content {
-	margin: 0 20px;
 	font-weight: bold;
+}
+
+.Header {
+	position: relative;
+	display: flex;
+	border-bottom: 2px solid #508fca;
 }

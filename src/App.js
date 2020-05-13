@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Nav from "./components/Nav";
 import ItemPage from "./components/ItemPage";
 import CartPage from "./components/CartPage";
+import CartResume from "./components/CartResume";
 
 import { items } from "./static";
 import "./App.css";
@@ -45,8 +46,6 @@ class App extends Component {
 			return itemCounts;
 		}, {});
 
-		console.log("Item counts object:", itemCounts);
-
 		// Create an array of items
 		let cartItems = Object.keys(itemCounts).map((itemId) => {
 			// Find the item by its id
@@ -59,7 +58,6 @@ class App extends Component {
 			};
 		});
 
-		console.log("Cart items object:", cartItems);
 		return (
 			<CartPage
 				items={cartItems}
@@ -84,7 +82,15 @@ class App extends Component {
 
 		return (
 			<div className="App">
-				<Nav activeTab={activeTab} onTabChange={this.handleTabChange} />
+				<div className="Header">
+					<Nav activeTab={activeTab} onTabChange={this.handleTabChange} />
+					{!this.state.activeTab && (
+						<CartResume
+							itemsInCart={this.state.cart.length}
+							onTabChange={this.handleTabChange}
+						/>
+					)}
+				</div>
 				<div className="App-content">{this.renderContent()}</div>
 			</div>
 		);

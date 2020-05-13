@@ -46,3 +46,8 @@
 	max-height: 800px;
 	max-width: 600px;
 }
+
+.CartPage-total {
+	font-size: x-large;
+	float: right;
+}
