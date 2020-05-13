@@ -24,6 +24,11 @@
 	margin-bottom: 0.4em;
 }
 
+.Item-description {
+	font-weight: 400;
+	color: #555;
+}
+
 .Item-price {
 	text-align: right;
 	font-size: 18px;
@@ -42,11 +47,13 @@
 .Item-addToCart:hover {
 	background-color: #ffddb2;
 }
+
 .Item-addToCart:active {
 	background-color: #ed8400;
 	color: #fff;
 	outline: none;
 }
+
 .Item-addToCart:focus {
 	outline: none;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Item from "./../item/Item";
+import Item from "./Item";
 import "./ItemPage.css";
 
 const ItemPage = ({ items, onAddToCart }) => {

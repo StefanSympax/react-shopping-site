@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import Nav from "./components/nav/Nav";
-import ItemPage from "./components/itempage/ItemPage";
-import CartPage from "./components/cartpage/CartPage";
+import Nav from "./components/Nav";
+import ItemPage from "./components/ItemPage";
+import CartPage from "./components/CartPage";
 
 import { items } from "./static";
 import "./App.css";

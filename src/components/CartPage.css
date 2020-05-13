@@ -38,3 +38,11 @@
 .CartItem-count:hover {
 	background-color: cornsilk;
 }
+.Empty-cart {
+	text-align: center;
+}
+
+.Empty-cart img {
+	max-height: 800px;
+	max-width: 600px;
+}

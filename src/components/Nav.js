@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
+import "./nav.css";
 
 const Nav = ({ activeTab, onTabChange }) => (
 	<nav className="App-nav">
