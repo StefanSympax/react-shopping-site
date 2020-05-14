@@ -1,11 +1,35 @@
 .ItemPage-items {
-	margin: 0;
+	margin-top: 1px;
 	padding: 0;
 	list-style: none;
+	height: 99.9%;
+	overflow-y: auto;
 }
 
 .ItemPage-items li {
 	list-style: none;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+}
+
+/* Scroll bar styles */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }

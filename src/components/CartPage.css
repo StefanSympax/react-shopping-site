@@ -1,10 +1,9 @@
 .CartPage-items {
-	margin: 0;
+	margin-top: 1px;
 	padding: 0;
-}
-
-.CartPage-items li {
 	list-style: none;
+	max-height: 93%;
+	overflow-y: auto;
 }
 
 .CartItem-count {
@@ -40,11 +39,12 @@
 }
 .Empty-cart {
 	text-align: center;
+	width: 100%;
 }
 
 .Empty-cart img {
-	max-height: 800px;
-	max-width: 600px;
+	width: inherit;
+	height: inherit;
 }
 
 .CartPage-total {

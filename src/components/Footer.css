@@ -1,0 +1,62 @@
+.Footer-container {
+	width: inherit;
+	height: 15%;
+	background-color: black;
+	color: white;
+}
+
+.Footer-socialMedia,
+.Footer-termsPolicy,
+.Footer-copyRights {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: fit-content;
+	margin: auto;
+}
+
+/* Top */
+.Footer-socialMedia {
+	font-size: 20px;
+}
+
+.Footer-socialMedia i {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.Footer-socialMedia i.Icon-facebook:hover {
+	color: #4267b2;
+}
+.Footer-socialMedia i.Icon-twitter:hover {
+	color: #1da1f2;
+}
+.Footer-socialMedia i.Icon-instagram:hover {
+	color: #c13584;
+}
+.Footer-socialMedia i.Icon-whatsapp:hover {
+	color: #25d366;
+}
+.Footer-socialMedia i.Icon-linkedin:hover {
+	color: #0077b5;
+}
+.Footer-socialMedia i.Icon-youtube:hover {
+	color: #ff0000;
+}
+
+/* Middle */
+.Footer-termsPolicy span {
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.Footer-termsPolicy span:hover {
+	color: greenyellow;
+	cursor: pointer;
+}
+
+/* Bottom */
+.Footer-copyRights {
+}

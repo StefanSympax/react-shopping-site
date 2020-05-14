@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import ItemPage from "./components/ItemPage";
 import CartPage from "./components/CartPage";
 import CartResume from "./components/CartResume";
+import Footer from "./components/Footer";
 
 import { items } from "./static";
 import "./App.css";
@@ -91,7 +92,10 @@ class App extends Component {
 						/>
 					)}
 				</div>
+
 				<div className="App-content">{this.renderContent()}</div>
+
+				<Footer owner={"GTR-Stefan"} />
 			</div>
 		);
 	}

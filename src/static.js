@@ -34,6 +34,34 @@ let items = [
 		price: 599.99,
 		url: "/images/apple_watch2.jpg",
 	},
+	/*	{
+		id: 5,
+		name: "Apple Watch Sport",
+		description: "A watch",
+		price: 249.99,
+		url: "/images/apple_watch1.jpg",
+	},
+	{
+		id: 6,
+		name: "Apple Watch Silver",
+		description: "A more expensive watch",
+		price: 199.99,
+		url: "",
+	},
+	{
+		id: 7,
+		name: "Apple Watch Sport",
+		description: "A watch",
+		price: 149.99,
+		url: "",
+	},
+	{
+		id: 8,
+		name: "Apple Watch Silver",
+		description: "A more expensive watch",
+		price: 399.99,
+		url: "",
+	},*/
 ];
 
 export { items };

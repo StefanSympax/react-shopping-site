@@ -1,14 +1,17 @@
 .App {
 	max-width: 800px;
 	margin: 0 auto;
+	height: inherit;
 }
 
 .App-content {
 	font-weight: bold;
+	height: 76%;
 }
 
 .Header {
 	position: relative;
 	display: flex;
 	border-bottom: 2px solid #508fca;
+	height: 8%;
 }
